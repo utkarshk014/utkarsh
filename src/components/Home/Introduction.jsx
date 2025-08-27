@@ -3,6 +3,7 @@ import LinkedinIcon from "../../assets/icons/contact/Linkedin.jsx";
 import EmailIcon from "../../assets/icons/contact/Email.jsx";
 import CustomToolTip from "../CustomToolTip.jsx";
 import { motion } from "framer-motion";
+import profileImage from "../../assets/images/profile.png";
 
 export default function Introduction() {
   return (
@@ -55,7 +56,7 @@ export default function Introduction() {
           viewport={{ amount: "some", once: "true" }}
           className="sm:w-[400px] w-[80vw]"
         >
-          <img src="./src/assets/images/profile.png" alt="Profile" />
+          <img src={profileImage} alt="Profile" />
         </motion.div>
       </div>
     </>
