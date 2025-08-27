@@ -1,33 +1,41 @@
+import TechItem from "../TechItem.jsx";
 
-import TechItem from '../TechItem.jsx';
-
-import tailwindIcon from '../../assets/icons/tech/Tailwind.png'
-import reactIcon from '../../assets/icons/tech/React.png'
-import javaIcon from '../../assets/icons/tech/Java.png'
-import gitIcon from '../../assets/icons/tech/Git.png'
-import wordpressIcon from '../../assets/icons/tech/Wordpress.png'
-import figmaIcon from '../../assets/icons/tech/Figma.png'
-import htmlIcon from '../../assets/icons/tech/HTML.png'
-import cssIcon from '../../assets/icons/tech/CSS.png'
-import reactNativeIcon from '../../assets/icons/tech/React Native.png'
-import javaScriptIcon from '../../assets/icons/tech/JavaScript.png'
+import tailwindIcon from "../../assets/icons/tech/Tailwind.png";
+import reactIcon from "../../assets/icons/tech/React.png";
+import gitIcon from "../../assets/icons/tech/Git.png";
+import reactNativeIcon from "../../assets/icons/tech/React Native.png";
+import goIcon from "../../assets/icons/tech/Go.png";
+import typescriptIcon from "../../assets/icons/tech/typescript.png";
+import awsIcon from "../../assets/icons/tech/aws.png";
+import postgresIcon from "../../assets/icons/tech/postgresql.png";
+import graphqlIcon from "../../assets/icons/tech/graphql.png";
+import dockerIcon from "../../assets/icons/tech/docker.png";
+import pythonIcon from "../../assets/icons/tech/python.png";
 
 export default function Skills() {
-    return (
-        <section id="knowledge"  className='sm:px-16 px-6 '>
-          <h2>Conhecimentos</h2>
-          <div id="skills-container" className='px-2 flex flex-wrap gap-3 py-3 justify-center'>
-            <TechItem name={'React'}  alternativeTitle={'A maravilha da modularidade'} image={reactIcon}/>
-            <TechItem name={'JavaScript'}  alternativeTitle={'desenhar'} image={javaScriptIcon}/>
-            <TechItem name={'Tailwind'}  alternativeTitle={'CSS 2.0'} image={tailwindIcon}/>
-            <TechItem name={'CSS'}  alternativeTitle={'desenhar'} image={cssIcon}/>
-            <TechItem name={'HTML'}  alternativeTitle={'desenhar'} image={htmlIcon}/>
-            <TechItem name={'React Native'}  alternativeTitle={'desenhar'} image={reactNativeIcon}/>
-            <TechItem name={'Figma'}  alternativeTitle={'desenhar'} image={figmaIcon}/>
-            <TechItem name={'Wordpress'}  alternativeTitle={'desenhar'} image={wordpressIcon}/>
-            <TechItem name={'Java'}  alternativeTitle={'desenhar'} image={javaIcon}/>
-            <TechItem name={'GIT'}  alternativeTitle={'desenhar'} image={gitIcon}/>
-          </div>
-        </section>
-    )
+  return (
+    <section id="knowledge" className="sm:px-16 px-6 ">
+      <h2>Skills</h2>
+      <div
+        id="skills-container"
+        className="px-2 flex flex-wrap gap-3 py-3 justify-center"
+      >
+        <TechItem name={"Go"} image={goIcon} />
+        <TechItem name={"Python"} image={pythonIcon} />
+        <TechItem name={"Typescript"} image={typescriptIcon} />
+        <TechItem name={"AWS"} image={awsIcon} />
+        <TechItem name={"Postgres"} image={postgresIcon} />
+        <TechItem name={"Docker"} image={dockerIcon} />
+        <TechItem name={"GraphQL"} image={graphqlIcon} />
+        <TechItem name={"React"} image={reactIcon} />
+        <TechItem
+          name={"Tailwind"}
+          alternativeTitle={"CSS 2.0"}
+          image={tailwindIcon}
+        />
+        <TechItem name={"React Native"} image={reactNativeIcon} />
+        <TechItem name={"GIT"} image={gitIcon} />
+      </div>
+    </section>
+  );
 }

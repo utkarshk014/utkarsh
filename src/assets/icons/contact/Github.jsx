@@ -1,17 +1,10 @@
-import * as React from "react"
-export default function Github ({theme, action}) {
-
+import * as React from "react";
+export default function Github({ action }) {
   let corPrimaria = "#2F2F2F";
   let corSecundaria = "#E5E5E5";
 
-    if(theme==='dark') {
-      let temp = corPrimaria;
-      corPrimaria = corSecundaria;
-      corSecundaria = temp;
-    }
-
-    return (
-      <svg
+  return (
+    <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       className="pointer pt-0.5  hover:scale-105 ease-in-out w-10 h-10 "
@@ -106,5 +99,5 @@ export default function Github ({theme, action}) {
         d="M9.107 26.74c1.05 1.05 2.356 1.803 3.82 2.088.882.172 1.695-.17 2.533-.376.209-.05.505-.136.505-.376M15.041 32.295c.685 0 1.361.276 2.055.343.946.091 1.98.104 2.93.034.466-.034.796-.37 1.234-.45.12-.02.322-.11.44-.075.014.004-.52.403-.593.449-.541.346-1.12.2-1.737.25-.959.078-1.919.059-2.88.059-.347 0-1.197-.03-1.373-.381"
       />
     </svg>
-  )  
+  );
 }

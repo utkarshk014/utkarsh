@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import {} from "react";
 
-export default function CaricaturaEstatica() {
+export default function StaticCaricature() {
   const [isVisible, setIsVisible] = useState(1);
   const [corPrimaria, setCorPrimaria] = useState("#2F2F2F");
 

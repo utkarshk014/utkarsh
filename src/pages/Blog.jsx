@@ -2,12 +2,12 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 
 import Post from "../components/Blog/Post.jsx";
-export default function Blog({ theme, setTheme }) {
+export default function Blog() {
   return (
-    <div id="at" className={`${theme ?? "dark"}`}>
-      <div className="max-sm:w-screen flex justify-center bg-platinum dark:bg-jet min-h-screen">
-        <div className="dark:text-platinum max-w-[1240px] w-full min-h-screen space-y-8 text-jet">
-          <Navbar setTheme={setTheme} theme={theme} />
+    <div id="at">
+      <div className="max-sm:w-screen flex justify-center bg-platinum min-h-screen">
+        <div className="max-w-[1240px] w-full min-h-screen space-y-8 text-jet">
+          <Navbar />
           <div className="flex-col h-[80%]">
             <div className="flex items-center gap-1 flex-col">
               <code className="flex text-[18px] gap-2 group">
@@ -25,9 +25,7 @@ export default function Blog({ theme, setTheme }) {
               </code>
               <Post
                 title="Hello World"
-                texts={[
-                  "Parabéns, você encontrou um easter egg."
-                ]}
+                texts={["Parabéns, você encontrou um easter egg."]}
               />
             </div>
           </div>

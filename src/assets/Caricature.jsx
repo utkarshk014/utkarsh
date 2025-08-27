@@ -2,35 +2,21 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-export default function Caricatura({ theme }) {
+export default function Caricature() {
   const [isVisible, setIsVisible] = useState(1);
 
   function onAnimation() {
-    if (theme == "dark") {
-      setTimeout(function () {
-        setIsVisible(1);
-      }, 500);
+    setTimeout(function () {
+      setIsVisible(3);
+    }, 500);
 
-      setTimeout(function () {
-        setIsVisible(2);
-      }, 1000);
+    setTimeout(function () {
+      setIsVisible(2);
+    }, 1000);
 
-      setTimeout(function () {
-        setIsVisible(3);
-      }, 1500);
-    } else {
-      setTimeout(function () {
-        setIsVisible(3);
-      }, 500);
-
-      setTimeout(function () {
-        setIsVisible(2);
-      }, 1000);
-
-      setTimeout(function () {
-        setIsVisible(1);
-      }, 1500);
-    }
+    setTimeout(function () {
+      setIsVisible(1);
+    }, 1500);
   }
 
   const [initialRender, setInitialRender] = useState(true);
@@ -40,9 +26,9 @@ export default function Caricatura({ theme }) {
       onAnimation();
     } else {
       setInitialRender(false);
-      if (theme == "dark") setIsVisible(3);
+      setIsVisible(3);
     }
-  }, [theme]);
+  }, []);
 
   return (
     <svg

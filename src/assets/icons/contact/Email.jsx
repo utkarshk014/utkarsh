@@ -1,18 +1,10 @@
-import * as React from "react"
-export default function Email ({theme, action}) {
-
-  
+import * as React from "react";
+export default function Email({ action }) {
   let corPrimaria = "#2F2F2F";
   let corSecundaria = "#E5E5E5";
 
-    if(theme==='dark') {
-      let temp = corPrimaria;
-      corPrimaria = corSecundaria;
-      corSecundaria = temp;
-    }
-
-    return (
-      <svg
+  return (
+    <svg
       onClick={action}
       className=" pointer pt-1 pl-1 hover:scale-105 cursor-pointer ease-in-out w-10 h-10"
       xmlns="http://www.w3.org/2000/svg"
@@ -31,5 +23,5 @@ export default function Email ({theme, action}) {
         d="M7.942 11.38c-.278 3.31-.551 6.64-.551 9.967m-.413.322c5.665 0 11.384-.244 17.039.232.221.019.718.048.978.068m0 0c.16.013.23.021.094.021a.205.205 0 0 1-.094-.02Zm0 0c-.087-.044-.124-.154-.15-.282-.119-.57-.073-1.23-.077-1.804a393.184 393.184 0 0 0-.108-6.324c-.027-1.2.162-2.632-.168-3.786m-15.721.643c4.277-.165 8.554-.362 12.833-.456 1.445-.031 1.704-.026 2.934-.026h.567m-16.197.321c2.28 1.59 4.606 3.092 6.895 4.662m.276 0c2.481-1.545 5.074-2.877 7.585-4.34"
       />
     </svg>
-    )
+  );
 }
