@@ -44,6 +44,15 @@ export default function Navbar() {
                 Skills
               </HashLink>
             </li>
+
+            <li className="px-3 text-[1.2rem] group hover:bg-jet">
+              <HashLink
+                className="pointer text-jet group-hover:text-platinum"
+                to="\#work-projects"
+              >
+                Workplace Projects
+              </HashLink>
+            </li>
             <li className="px-3 text-[1.2rem] group hover:bg-jet">
               <HashLink
                 className="pointer text-jet group-hover:text-platinum"
