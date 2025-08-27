@@ -43,14 +43,6 @@ export default function About() {
           <strong> payment workflows</strong>. I love constantly learning and
           experimenting with new technologies.
         </p>
-        <p className="sm:text-[1.3em] text-[1.1rem] text-left py-2">
-          Beyond work, I enjoy exploring{" "}
-          <strong>AI applications, open-source projects,</strong> and building
-          developer tools. Some of my favorite projects include{" "}
-          <strong>AI SQL Agent</strong> (natural language to SQL),{" "}
-          <strong>i18n-lazy</strong> (AI-powered localization npm package), and{" "}
-          <strong>Theo</strong> (AI finance assistant).
-        </p>
         <span className="flex flex-wrap items-center">
           <p className="sm:text-[1.3em] text-[1.1rem] text-left py-2">
             Reach me at<strong> email: </strong>
